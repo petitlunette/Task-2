@@ -1,17 +1,10 @@
 import subprocess
 
 sra_numbers = [
-    "SRR1976144", "SRR1976143", "SRR1976141", "SRR1976140",
-"SRR1976138", "SRR1976137", "SRR1976135", "SRR1976134",
-"SRR1976132", "SRR1976131", "SRR1976127", "SRR1976125",
-"SRR1976123", "SRR1976122", "SRR1976120", "SRR1976119",
-"SRR1976116", "SRR1976115", "SRR1976113", "SRR1976112",
-"SRR1976110", "SRR1976109", "SRR1976107", "SRR1976106",
-"SRR1976105", "SRR1976103", "SRR1976101", "SRR1976100",
-"SRR1976098", "SRR1976097", "SRR1976095", "SRR1976094"
+    "SRRXXXXXXX", "SRRXXXXXXX" 
     ]
 
-input_directory = "/path/to/input_directory"  # Change this to your desired directory
+input_directory = "/path/to/input_directory"  # Change this to your desired directory, if a unicode error appears at this line use directory =r"path"
 
 # Ensure the custom directory exists
 subprocess.call(f"mkdir -p {input_directory}", shell=True)
