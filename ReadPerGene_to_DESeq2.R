@@ -23,5 +23,5 @@ rownames(allCounts) <- gene_ids # Ensure the row names of the matrix are the gen
 # Create a DESeqDataSet
 deseqdataset <- DESeqDataSetFromMatrix(countData = allCounts,
                               colData = samples_info,
-                              design = ~ cultivar + treatment + tissue)
+                              design = ~ cultivar + treatment + tissue + treatment:tissue)
 deseqdataset <- DeSeq(deseqdataset)
